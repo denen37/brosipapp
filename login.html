@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="shortcut icon" href="/images/Asset 2Logo.png" type="icon">
+    <title>Log In</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-head">
+            <div class="head__image">
+                <img src="/images/Asset 2Logo.png" alt="logo" id="head-img">
+                <p>Brosip</p>
+            </div>
+            <div class="head-logIn">
+                <p>Privacy Policy</p>
+                <button id="login-btn"><a href="signup.html">Set up account</a></button>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="left-side">
+            <img src="/images/male-model.jpeg" alt="Model" id="left-sideImg">
+        </div>
+        <div class="right-side">
+            <div class="input-area">
+                <h1>Log in to your account</h1>
+                <ul class="error-list">
+                </ul>
+                <div class="input-box" id="inputBox-2">
+                    <div id="input-element">
+                        <input type="email" name="email" class="email" placeholder="email">
+                        <!-- <input type="radio" class="unRadio"> -->
+                    </div>
+                </div>
+                <!-- <p class="dots">...</p> -->
+
+                <div class="input-box" id="inputBox-3">
+                    <input type="password" name="password" class="Password" placeholder="Password">
+                </div>
+
+
+                <button id="signUP-btn">
+                    <span class="loader"></span>
+                    <span class="text">Log In</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="/script/login.js"></script>
+</body>
+
+</html>

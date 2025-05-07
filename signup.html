@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="shortcut icon" href="/images/Asset 2Logo.png" type="icon">
+    <title>Sign Up</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-head">
+            <div class="head__image">
+                <img src="/images/Asset 2Logo.png" alt="logo" id="head-img">
+                <p>Brosip</p>
+            </div>
+            <div class="head-logIn">
+                <p>Privacy Policy</p>
+                <button id="login-btn"><a href="login.html">Log in</a></button>
+            </div>
+        </div>
+        </head>
+        <div class="container">
+            <div class="left-side">
+                <img src="/images/male-model.jpeg" alt="Model" id="left-sideImg">
+            </div>
+            <div class="right-side">
+                <div class="input-area">
+                    <h1>Set Up Account</h1>
+                    <ul class="error-list">
+                    </ul>
+                    <div class="input-box" id="inputBox-1">
+                        <div id="input-element">
+                            <input type="text" name="firstName" class="firstName" placeholder="First Name">
+                            <!-- <input type="radio" class="fnRadio"> -->
+                        </div>
+                    </div>
+                    <div class="input-box" id="inputBox-2">
+                        <div id="input-element">
+                            <input type="text" name="lastName" class="lastName" placeholder="Last Name">
+                            <!-- <input type="radio" class="fnRadio"> -->
+                        </div>
+                    </div>
+                    <div class="input-box" id="inputBox-3">
+                        <div id="input-element">
+                            <input type="email" name="email" class="email" placeholder="Email">
+                            <!-- <input type="radio" class="unRadio"> -->
+                        </div>
+                    </div>
+
+
+                    <div class="input-box" id="inputBox-4">
+                        <div id="input-element">
+                            <input type="text" name="phone" class="phone" placeholder="Phone">
+                        </div>
+                    </div>
+
+
+                    <div class="input-box" id="inputBox-5">
+                        <input type="password" name="password" class="password" placeholder="Password">
+                    </div>
+
+                    <div class="input-box" id="inputBox-6">
+                        <input type="password" name="cpassword" class="cpassword" placeholder="Confirm password">
+                    </div>
+
+                    <div class="right-bottom">
+                        <input type="radio" id="checkId">
+                        <p>I comply to the <a href="#">Terms and conditions</a></p>
+                    </div>
+                    <span id="consent-error">you need to consent to terms and conditions to use the platform</span>
+                    <button id="signUP-btn">
+                        <span class="loader"></span>
+                        <span class="text">Get started</span>
+                    </button>
+                    <!-- <div class="captcha">
+                        <p>Secure by goggle captcha</p>
+                        <img src="/images/Secured.png" alt="captcha">
+                    </div> -->
+                </div>
+
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="/script/signup.js"></script>
+</body>
+
+</html>

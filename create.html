@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brosip - Home</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/create.css">
+</head>
+
+<body>
+    <!-- Top Navigation Bar -->
+    <header class="top-nav py-2 px-3">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <!-- Column 1: Logo (visible on all screens) -->
+                <div class="col-6 col-lg-2">
+                    <div class="logo d-flex align-items-center">
+                        <div class="logo-icon">
+                            <img src="./images/Asset 2Logo.png" alt="" width="50">
+                        </div>
+                        &nbsp;
+                        Brosip
+                    </div>
+                </div>
+
+                <!-- Column 2: Navigation (hidden on small and medium screens, shown in offcanvas) -->
+                <div class="col-lg-8 d-none d-lg-block bg-body-secondary rounded-4">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Explore</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Models</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Style</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Pose</a>
+                            </li>
+                        </ul>
+
+                        <form class="search-form d-flex me-2 align-items-center w-50 bg-white border py-0">
+                            <i class="fas fa-search me-2"></i>
+                            <input type="text" placeholder="Browse the sip" class="rounded-none w-100">
+                            <button type="submit" class="search-button">
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Column 3: Notifications/Bookmarks/Profile + Toggle (visible on all screens) -->
+                <div class="col-6 col-lg-2">
+                    <div class="d-flex justify-content-end align-items-center">
+
+
+                        <!-- Notification, bookmark and profile icons -->
+                        <a href="#" class="nav-link">
+                            <i class="far fa-bell"></i>
+                        </a>
+                        <a href="#" class="nav-link">
+                            <i class="far fa-bookmark"></i>
+                        </a>
+                        <a href="#" class="ms-2">
+                            <img src="./images/profile.png" alt="User" class="rounded-circle" width="30">
+                        </a>
+
+                        <!-- Toggle button (visible on small and medium screens) -->
+                        <button class="btn btn-light d-lg-none me-2 ms-2" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                            <i class="fas fa-bars"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Offcanvas menu for small and medium screens -->
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                    <img src="./images/Asset 2Logo.png" alt="" width="40"> Brosip
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Explore</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Models</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Style</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Pose</a>
+                    </li>
+                </ul>
+
+                <form class="search-form mt-3">
+                    <div class="input-group">
+                        <span class="input-group-text">
+                            <i class="fas fa-search"></i>
+                        </span>
+                        <input type="text" class="form-control" placeholder="Browse the sip">
+                        <button class="btn btn-outline-secondary" type="submit">
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="container-fluid">
+        <div class="row justify-content-between">
+            <!-- Left Sidebar Navigation -->
+            <div class="col-lg-3 sidebar d-lg-block">
+                <div class="d-flex flex-column h-100 py-3">
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-home"></i> Home
+                    </a>
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-chart-line active"></i> Trending
+                    </a>
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-user-friends"></i> Popular models
+                    </a>
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-history"></i> Recently viewed
+                    </a>
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-plus-circle"></i> Create
+                    </a>
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-file-alt"></i> Drafts
+                    </a>
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-edit"></i> Edit account
+                    </a>
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-user"></i> Profile
+                    </a>
+                    <div class="mt-auto">
+                        <a href="#" class="nav-link text-danger">
+                            <i class="fas fa-sign-out-alt"></i> Log out
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Content Area -->
+            <div class="col-lg-9 row content-wrapper py-3 main">
+                <div class="">
+                    <h1 class="header">Create Post</h1>
+                    <p class="info">Upload your main post by selecting a category and post privacy, then select category
+                        for
+                        each
+                        uploading field.</p>
+
+                    <div class="">
+                        <div class="upload-box d-md-flex g-2">
+                            <div class="upload-front flex-grow-1 p-0 m-2">
+                                <div class="p-4">
+                                    <div class="position-relative">
+                                        <label for="front-view"
+                                            class="front-view-label flex align-items-center justify-content-center cursor-pointer">
+                                            <span class="front-plus-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100"
+                                                    fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4" />
+                                                </svg>
+                                            </span>
+                                        </label>
+                                        <input type="file" id="front-view" class="form-control" accept="image/*">
+                                        <img class="front-view-img hide" src="" alt="Front View Image">
+
+                                        <div
+                                            class="front-overlay position-absolute top-0 start-0 w-100 h-100 flex align-items-center justify-content-center bg-black opacity-50 hide">
+                                            <span class="loader front-loader"></span>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="d-flex align-items-center g-2 border-top p-2">
+                                    <label for="category" class="category-label text-nowrap me-2">Front View</label>
+                                    <select id="pose-type" class="form-select">
+                                        <option selected disabled>Select your pose type</option>
+                                        <option>Pose</option>
+                                        <option>Style</option>
+                                    </select>
+                                    <button class="btn btn-primary ms-2" id="front-view-upload">Upload</button>
+                                </div>
+                            </div>
+
+                            <div class="upload-front flex-grow-1 p-0 m-2">
+                                <div class="p-4">
+                                    <div class="position-relative">
+                                        <label for="open-view"
+                                            class="open-view-label flex align-items-center justify-content-center cursor-pointer">
+                                            <span class="open-plus-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100"
+                                                    fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4" />
+                                                </svg>
+                                            </span>
+                                            <span class="loader open-loader hide"></span>
+                                        </label>
+                                        <input type="file" id="open-view" class="form-control" multiple
+                                            accept="image/*">
+                                        <div class="open-view-img-container hide">
+                                        </div>
+
+                                        <div
+                                            class="open-overlay position-absolute top-0 start-0 bottom-0 end-0 flex align-items-center justify-content-center bg-black opacity-50 hide">
+                                            <span class="loader front-loader"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center g-2 border-top p-2">
+                                    <label for="" class="category-label text-nowrap me-2">Open View</label>
+                                    <select id="pose-options" class="form-select">
+                                        <option selected value="" disabled>Select your pose options</option>
+                                        <option>Standing</option>
+                                        <option>Sitting</option>
+                                        <option>Lying Down</option>
+                                        <option>Walking</option>
+                                        <option>Running</option>
+                                        <option>Leaning</option>
+                                        <option>Kneeling</option>
+                                    </select>
+
+                                    <button class="btn btn-primary ms-2" id="open-view-upload">Upload</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-5">
+                        <div class="">
+                            <div>Post Title</div>
+                            <div>
+                                <input id="title" type="text" maxlength="100" class="form-control border-gray-md" />
+                            </div>
+                        </div>
+
+                        <div class="mt-4">
+                            <div>Post Description</div>
+                            <textarea id="description" maxlength="500" class="form-control border-gray-md"></textarea>
+                        </div>
+                    </div>
+
+
+                    <div class="buttons d-flex justify-content-evenly mt-5">
+                        <button class="publish btn btn-success">
+                            <span class="btn-loader"></span>
+                            <span class="text">Publish</span>
+                        </button>
+                        <button class="discard btn btn-danger">
+                            <span class="text">Discard</span>
+                            <span class="btn-loader"></span>
+                        </button>
+                    </div>
+                </div>
+
+
+
+                <!-- <div class="col-lg-4 user-guide d-none d-lg-block">
+                </div> -->
+            </div>
+            <!-- Right Sidebar - User Guide -->
+
+        </div>
+
+        <!-- Footer Navigation (visible on small screens) -->
+        <div class="footer-nav justify-content-around">
+            <a href="#" class="footer-nav-item active">
+                <i class="fas fa-home"></i>
+                <span>Home</span>
+            </a>
+            <a href="#" class="footer-nav-item">
+                <i class="fas fa-chart-line"></i>
+                <span>Trending</span>
+            </a>
+            <a href="#" class="footer-nav-item">
+                <i class="fas fa-plus-circle"></i>
+                <span>Create</span>
+            </a>
+            <a href="#" class="footer-nav-item">
+                <i class="fas fa-user-friends"></i>
+                <span>Models</span>
+            </a>
+            <a href="#" class="footer-nav-item">
+                <i class="fas fa-user"></i>
+                <span>Profile</span>
+            </a>
+        </div>
+
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="./script/create.js"></script>
+</body>
+
+</html>

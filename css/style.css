@@ -1,0 +1,393 @@
+html {
+    font-family: "Roboto", sans-serif;
+    scroll-behavior: smooth;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --padding: 1rem;
+    --bd-radious: 15px;
+    /* || COLOR || */
+    --bg-color: white;
+    --border: 1px solid gray;
+    --bg-colorBody: #f3f3f3
+}
+
+body {
+    background-color: var(--bg-color);
+    padding: var(--padding);
+
+}
+
+.container {
+    padding: var(--padding);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* This is for the heading */
+
+.header-head {
+    padding: var(--padding);
+    margin-top: 1rem;
+    margin-left: var(--padding);
+    border-radius: var(--bd-radious);
+    background-color: var(--bg-colorBody);
+    border: var(--border);
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    gap: 0.8rem;
+}
+
+#head-img {
+    width: 30px;
+}
+
+.head__image,
+.head-logIn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.head-logIn {
+    gap: 0.7rem;
+}
+
+
+#login-btn {
+    border: 0;
+    border-radius: 10px;
+    background-color: #e0e0e0;
+    padding: 0.4rem 1rem;
+    outline: 0;
+}
+
+#login-btn a {
+    text-decoration: none;
+    color: #eb6b23;
+}
+
+/* this for the input area */
+
+.input-area {
+    background-color: var(--bg-color);
+    border: var(--border);
+    border-radius: var(--bd-radious);
+    padding: 2rem;
+    margin-top: 3rem;
+
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.dots {
+    margin-top: -4rem;
+    color: #eb6b23;
+    font-size: 5rem;
+    text-align: center;
+}
+
+
+.input-box {
+    width: 100%;
+    margin-bottom: 1rem;
+    border: var(--border);
+    background-color: var(--bg-colorBody);
+    border-radius: var(--bd-radious);
+    padding: var(--padding);
+}
+
+#input-element {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input-box input[type="email"],
+.input-box input[type="text"],
+.input-box input[type="password"] {
+    border: 0;
+    outline: 0;
+    font-size: 1rem;
+    flex-grow: 1;
+    background-color: var(--bg-colorBody);
+}
+
+input[type="radio"] {
+    width: 20px;
+    height: 20px;
+    background-color: var(--bg-colorBody);
+}
+
+.input-box.invalid-input {
+    border: 1px solid red;
+}
+
+/* Validation Styles */
+.replaced-radio-image {
+    width: 23px;
+    height: 23px;
+    margin-left: 10px;
+}
+
+
+.right-bottom {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem;
+}
+
+.right-bottom a {
+    text-decoration: none;
+    color: #eb6b23;
+}
+
+#inputBox-3 {
+    margin-top: 1rem;
+}
+
+/* #inputBox-4 {
+    margin-top: 3rem;
+} */
+
+.strength-meter {
+    display: flex;
+    margin: 5px 10px 0 10px;
+    height: 2px;
+    gap: 3px;
+}
+
+.strength-segment {
+    height: 100%;
+    flex: 1;
+    border-radius: 5px;
+    background-color: #b9b9b9;
+    transition: background-color 0.3s ease;
+}
+
+.password-toggle-icon {
+    color: #000;
+    transition: color 0.3s ease;
+}
+
+.password-toggle-icon:hover {
+    color: #eb6b23;
+    /* Match your brand color */
+}
+
+/* Password strength colors */
+.weak .segment-1 {
+    background-color: #ff4d4d;
+}
+
+.medium .segment-1,
+.medium .segment-2 {
+    background-color: #ffd24d;
+}
+
+.strong .segment-1,
+.strong .segment-2,
+.strong .segment-3 {
+    background-color: #4dff88;
+}
+
+#signUP-btn {
+    width: 100%;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: var(--bd-radious);
+    margin: 1rem 0;
+    background-color: #eb6b23;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+#signUP-btn:hover {
+    background-color: #d15a1f;
+}
+
+#left-sideImg {
+    display: none;
+}
+
+.right-bottom input[type='radio'] {
+    appearance: none;
+    border: 2px solid #8a8989;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+}
+
+.right-bottom input[type='radio']:checked {
+    background-color: #b9b9b9;
+    position: relative;
+
+
+}
+
+.right-bottom input[type='radio']:checked::after {
+    content: '✔';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 12px;
+
+}
+
+#consent-error {
+    font-size: 0.8rem;
+    color: red;
+    display: none;
+}
+
+.captcha {
+    display: flex;
+    gap: 0.2rem;
+    justify-content: flex-end;
+}
+
+.captcha p {
+    color: #08b4f8;
+    font-size: 0.9rem;
+}
+
+.captcha img {
+    width: 20px;
+    height: 20px;
+}
+
+@media screen and (min-width:768px) {
+    body {
+        padding: var(--padding);
+    }
+
+    .header-head {
+        margin-right: 2rem;
+    }
+
+    .container {
+        margin-top: 3rem;
+        width: 90%;
+    }
+
+    #left-sideImg {
+        display: none;
+    }
+
+    .right-side {
+        width: 80%;
+    }
+
+}
+
+@media screen and (min-width:1034px) {
+    body {
+        padding: 1rem;
+    }
+
+    .header-head {
+        width: 95%;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 40px;
+        padding: 2rem 0;
+        margin-left: 1rem;
+    }
+
+    .input-area {
+        margin-top: 1rem;
+
+    }
+
+    .right-side {
+        flex-basis: 400%;
+        max-width: 40%;
+        height: auto;
+
+    }
+
+    .left-side {
+        flex-basis: 50%;
+        max-width: 50%;
+        /* padding-right: 30px; */
+    }
+
+    #left-sideImg {
+        width: 100%;
+        height: auto;
+        max-width: 450px;
+        max-height: 700px;
+        object-fit: contain;
+        border-radius: 40%;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+.error-list {
+    color: red;
+    font-size: 0.9rem;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.5rem;
+    list-style: none;
+    padding: 0;
+}
+
+.loader {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    display: none;
+    margin: 0 auto;
+    position: relative;
+    background: #FFF;
+    box-shadow: -24px 0 #FFF, 24px 0 #FFF;
+    box-sizing: border-box;
+    animation: shadowPulse 2s linear infinite;
+}
+
+@keyframes shadowPulse {
+    33% {
+        background: #FFF;
+        box-shadow: -24px 0 #FF3D00, 24px 0 #FFF;
+    }
+
+    66% {
+        background: #FF3D00;
+        box-shadow: -24px 0 #FFF, 24px 0 #FFF;
+    }
+
+    100% {
+        background: #FFF;
+        box-shadow: -24px 0 #FFF, 24px 0 #FF3D00;
+    }
+}
